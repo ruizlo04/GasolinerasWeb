@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="header">
+        <h1>RUTA<span class="fuel">FUEL</span></h1>
+    </div>
+    <div class="grid">
+        <div *ngFor="let gasolinera of listadoGasolineras" class="gas-station-card">
+            <div class="info">
+                <p>{{ gasolinera.Direccion }}</p>
+                <p>{{ gasolinera.Municipio }}</p>
+                <ul>
+                    <li>Gasolina: {{ gasolinera["Precio Gasolina 95 E5"] }}</li>
+                    <li>Gasóleo: {{ gasolinera["Precio Gasoleo A"] }}</li>
+                    <li>Hidrógeno: {{ gasolinera["Precio Hidrogeno"] }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
